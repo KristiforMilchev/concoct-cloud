@@ -4,9 +4,8 @@ namespace Platform.ViewComponents.Widgets
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
-    using Platform.Models;
-    using Rokono_Control.DatabaseHandlers;
     using Rokono_Control.Models;
+    using TransportLayer.Models;
     
     [ViewComponent(Name = "ChartForWorkItems")]
     public class ChartForWorkItemsViewComponent : ViewComponent

@@ -2,9 +2,8 @@ namespace Platform.ViewComponents.SurveyComponents.SurveyInput
 {
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
-    using Platform.DataHandlers;
     using Rokono_Control.Models;
-
+    using TransportLayer.Models;
     [ViewComponent(Name = "SurveyInputSettings")]
     public class SurveyInputSettingsViewComponent : ViewComponent
     {

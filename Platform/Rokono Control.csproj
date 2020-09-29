@@ -23,6 +23,15 @@
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="3.1.0" />
  
     <PackageReference Include="SSH.NET" Version="2016.1.0" />
+    
+    
+    <Reference Include="TrasnsportLayerDTOs">
+      <HintPath>../TrasnsportLayerDTOs/bin/Debug/netstandard2.0/TrasnsportLayerDTOs.dll</HintPath>
+    </Reference>
+    
+    <Reference Include="DataLayer">
+      <HintPath>../DataLayer/bin/Debug/netcoreapp3.1/DataLayer.dll</HintPath>
+    </Reference>
   </ItemGroup>
  
   <ItemGroup>

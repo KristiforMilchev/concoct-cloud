@@ -2,8 +2,9 @@ namespace Platform.ViewComponents
 {
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
-    using Platform.DatabaseHandlers.Contexts;
     using Rokono_Control.Models;
+    using TransportLayer.Models;
+    
     [ViewComponent(Name = "BugReportFormSettings")]
 
     public class BugReportFormSettingsViewComponent : ViewComponent

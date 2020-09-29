@@ -8,9 +8,9 @@ namespace Rokono_Control.Controllers
     using Microsoft.AspNetCore.Authentication.Cookies;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
-    using Rokono_Control.Models;
     using Microsoft.Extensions.Configuration;
-    using Platform.DatabaseHandlers.Contexts;
+    using Rokono_Control.Models;
+    using TransportLayer.Models;
 
     public class AuthenicationController : Controller
     {

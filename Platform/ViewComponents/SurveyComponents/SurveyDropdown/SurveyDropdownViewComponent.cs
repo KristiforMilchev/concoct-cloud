@@ -3,9 +3,8 @@ namespace Platform.ViewComponents.SurveyComponents.SurveyDropdown
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
-    using Platform.DataHandlers;
-    using Platform.Models;
     using Rokono_Control.Models;
+    using TransportLayer.Models;
 
     [ViewComponent(Name = "SurveyDropdown")]
     public class SurveyDropdownViewComponent: ViewComponent

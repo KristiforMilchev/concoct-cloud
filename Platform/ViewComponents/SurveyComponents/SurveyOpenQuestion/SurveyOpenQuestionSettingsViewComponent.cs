@@ -3,9 +3,8 @@ namespace Platform.ViewComponents.SurveyComponents.SurveyOpenQuestion
 {
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
-    using Platform.DataHandlers;
-    using Platform.Models;
     using Rokono_Control.Models;
+    using TransportLayer.Models;
 
     [ViewComponent(Name = "SurveyOpenQuestionSettings")]
     public class SurveyOpenQuestionSettingsViewComponent : ViewComponent

@@ -5,8 +5,8 @@ namespace Platform.ViewComponents.SurveyComponents.SurveyOpenQuestion
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
-    using Platform.Models;
     using Rokono_Control.Models;
+    using TransportLayer.Models;
 
     [ViewComponent(Name = "SurveyOpenQuestion")]
     public class SurveyOpenQuestionViewComponent : ViewComponent

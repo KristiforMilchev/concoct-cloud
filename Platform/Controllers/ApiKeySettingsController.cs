@@ -3,9 +3,9 @@ namespace Platform.Controllers
     using System.Collections.Generic;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
-    using Platform.DatabaseHandlers.Contexts;
-    using Platform.Models;
     using Rokono_Control.Models;
+    using TransportLayer.Models;
+    
     public class ApiKeySettingsController : Controller
     {
         RokonoControlContext Context;

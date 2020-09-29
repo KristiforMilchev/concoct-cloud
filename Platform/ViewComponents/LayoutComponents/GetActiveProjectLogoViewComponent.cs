@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Rokono_Control.DatabaseHandlers;
 using Rokono_Control.Models;
+using TransportLayer.Models;
 
 namespace Platform.ViewComponents.LayoutComponents
 {

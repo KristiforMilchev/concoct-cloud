@@ -15,12 +15,11 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Newtonsoft.Json;
-    using Platform.DataHandlers;
-    using Platform.DataHandlers.Interfaces;
     using Platform.Hubs;
-    using Rokono_Control.Models;
     using RokonoControl;
-
+    using Rokono_Control.Models;
+    using TransportLayer.Models;
+    
     public class Startup
     {
         public Startup(IConfiguration configuration)

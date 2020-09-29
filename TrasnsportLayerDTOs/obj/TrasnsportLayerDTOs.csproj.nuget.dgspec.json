@@ -1,29 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "/home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/TrasnsportLayerDTOs/TrasnsportLayerDTOs.csproj": {}
+    "/home/dwarfdevelopment/rctest/RokonoControl/TrasnsportLayerDTOs/TrasnsportLayerDTOs.csproj": {}
   },
   "projects": {
-    "/home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/TrasnsportLayerDTOs/TrasnsportLayerDTOs.csproj": {
+    "/home/dwarfdevelopment/rctest/RokonoControl/TrasnsportLayerDTOs/TrasnsportLayerDTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/TrasnsportLayerDTOs/TrasnsportLayerDTOs.csproj",
+        "projectUniqueName": "/home/dwarfdevelopment/rctest/RokonoControl/TrasnsportLayerDTOs/TrasnsportLayerDTOs.csproj",
         "projectName": "TrasnsportLayerDTOs",
-        "projectPath": "/home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/TrasnsportLayerDTOs/TrasnsportLayerDTOs.csproj",
-        "packagesPath": "/home/kristifor/.nuget/packages/",
-        "outputPath": "/home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/TrasnsportLayerDTOs/obj/",
+        "projectPath": "/home/dwarfdevelopment/rctest/RokonoControl/TrasnsportLayerDTOs/TrasnsportLayerDTOs.csproj",
+        "packagesPath": "/home/dwarfdevelopment/.nuget/packages/",
+        "outputPath": "/home/dwarfdevelopment/rctest/RokonoControl/TrasnsportLayerDTOs/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kristifor/.nuget/NuGet/NuGet.Config"
+          "/home/dwarfdevelopment/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netstandard2.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netstandard2.0": {
             "projectReferences": {}
           }
         },
@@ -34,13 +34,17 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netstandard2.0": {
           "dependencies": {
-            "Microsoft.NETCore.App": {
+            "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
             }
           },
           "imports": [

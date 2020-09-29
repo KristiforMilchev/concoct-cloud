@@ -4,7 +4,8 @@ namespace Platform.ViewComponents
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Rokono_Control.Models;
-    
+    using TransportLayer.Models;
+        
     public class ModuleDisabledWarningViewComponent : ViewComponent 
     {
         private readonly RokonoControlContext Context;

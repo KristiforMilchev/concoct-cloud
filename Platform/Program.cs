@@ -9,10 +9,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Platform.Models;
-using Rokono_Control.DatabaseHandlers;
-using Rokono_Control.DataHandlers;
-using RokonoControl.Models;
+using Rokono_Control.Models;
+using TransportLayer.Models;
 
 namespace Rokono_Control
 {

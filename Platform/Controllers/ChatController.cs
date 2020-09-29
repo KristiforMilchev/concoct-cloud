@@ -7,14 +7,12 @@ namespace Platform.Controllers
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.SignalR;
     using Microsoft.Extensions.Configuration;
-    using Platform.DatabaseHandlers.Contexts;
-    using Platform.DataHandlers;
-    using Platform.DataHandlers.Interfaces;
     using Platform.Hubs;
-    using Platform.Models;
     using Rokono_Control;
     using Rokono_Control.Models;
-    public class ChatController : Controller
+    using TransportLayer.Models;
+    
+     public class ChatController : Controller
     {
         RokonoControlContext Context;
         IConfiguration Configuration;

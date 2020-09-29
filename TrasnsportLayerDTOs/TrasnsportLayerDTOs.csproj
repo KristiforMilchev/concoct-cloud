@@ -1,19 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup Label="Globals">
-    <SccProjectName></SccProjectName>
-    <SccProvider></SccProvider>
-    <SccAuxPath></SccAuxPath>
-    <SccLocalPath></SccLocalPath>
-  </PropertyGroup>
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <ApplicationIcon />
-    <OutputType>Library</OutputType>
-    <StartupObject />
-    <Win32Resource />
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-
-  
+  <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
 </Project>

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/WWServer/WWServer.csproj": {}
+    "/home/dwarfdevelopment/rctest/RokonoControl/CoreCommunicationServer/WWServer.csproj": {}
   },
   "projects": {
-    "/home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/WWServer/WWServer.csproj": {
+    "/home/dwarfdevelopment/rctest/RokonoControl/CoreCommunicationServer/WWServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/WWServer/WWServer.csproj",
+        "projectUniqueName": "/home/dwarfdevelopment/rctest/RokonoControl/CoreCommunicationServer/WWServer.csproj",
         "projectName": "WWServer",
-        "projectPath": "/home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/WWServer/WWServer.csproj",
-        "packagesPath": "/home/kristifor/.nuget/packages/",
-        "outputPath": "/home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/WWServer/obj/",
+        "projectPath": "/home/dwarfdevelopment/rctest/RokonoControl/CoreCommunicationServer/WWServer.csproj",
+        "packagesPath": "/home/dwarfdevelopment/.nuget/packages/",
+        "outputPath": "/home/dwarfdevelopment/rctest/RokonoControl/CoreCommunicationServer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kristifor/.nuget/NuGet/NuGet.Config"
+          "/home/dwarfdevelopment/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

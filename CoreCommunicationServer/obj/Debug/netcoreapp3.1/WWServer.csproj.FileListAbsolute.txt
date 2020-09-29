@@ -49,3 +49,6 @@
 /home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/WWServer/obj/Debug/netcoreapp3.1/WWServer.csproj.CopyComplete
 /home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/WWServer/obj/Debug/netcoreapp3.1/WWServer.dll
 /home/kristifor/Projects/Games/StoriesUnraveled/Server/Slaves/StoriesUnraveledServer/WWServer/obj/Debug/netcoreapp3.1/WWServer.pdb
+/home/dwarfdevelopment/rctest/RokonoControl/CoreCommunicationServer/obj/Debug/netcoreapp3.1/WWServer.csprojAssemblyReference.cache
+/home/dwarfdevelopment/rctest/RokonoControl/CoreCommunicationServer/obj/Debug/netcoreapp3.1/WWServer.AssemblyInfoInputs.cache
+/home/dwarfdevelopment/rctest/RokonoControl/CoreCommunicationServer/obj/Debug/netcoreapp3.1/WWServer.AssemblyInfo.cs

@@ -8,13 +8,10 @@ namespace Platform.Hubs
     using Microsoft.AspNetCore.SignalR;
     using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
-    using Platform.DatabaseHandlers.Contexts;
-    using Platform.DataHandlers;
-    using Platform.DataHandlers.Interfaces;
-    using Platform.Models;
-    using Rokono_Control;
-    using Rokono_Control.DatabaseHandlers;
     using Rokono_Control.Models;
+    using TransportLayer.Models;
+    using Rokono_Control;
+ 
     public class MessageHub : Hub
     {
         RokonoControlContext DatabaseContext;

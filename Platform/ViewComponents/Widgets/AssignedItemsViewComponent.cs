@@ -3,7 +3,7 @@ namespace Platform.ViewComponents.Widgets
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Rokono_Control.Models;
-
+    using TransportLayer.Models;
  
     [ViewComponent(Name = "AssignedItems")]
     public class AssignedItemsViewComponent : ViewComponent

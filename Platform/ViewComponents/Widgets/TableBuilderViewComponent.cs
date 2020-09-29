@@ -3,8 +3,8 @@ namespace Platform.ViewComponents.Widgets
     using System.Linq;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
-    using Platform.Models;
     using Rokono_Control.Models;
+    using TransportLayer.Models;
 
     [ViewComponent(Name = "TableBuilder")]
     public class TableBuilderViewComponent : ViewComponent

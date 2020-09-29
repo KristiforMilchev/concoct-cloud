@@ -106,10 +106,7 @@
             var characterData = DatabaseLayer.GetCharacterData(clientData.AccountId, clientData.LoggedInCharacterId);
             characterData = Converters.GetCharacterRecepie(characterData);
 
-            clientData.ClientPosssition = new StoriesUntoldDataLayer.Model.ClientPossition();
-            clientData.ClientPosssition.X = (float)characterData.PossitionX;
-            clientData.ClientPosssition.Y = (float)characterData.PossitionY;
-            clientData.ClientPosssition.Z = (float)characterData.PossitionZ;
+  
 
             ClientController.Clients.FirstOrDefault(x => x.Id == connectionId).ClientPosssition = clientData.ClientPosssition;
 
@@ -135,20 +132,6 @@
                  60
             };
             var client = ClientController.Clients.FirstOrDefault(x => x.Id == connectionId).LoggedInCharacterId;
-
-            var dataResultQuests = new SerializableList<List<AssociatedCharacterQuests>>();
-            var dataResultZoneQuests = new SerializableList<List<AssociatedZoneQuests>>();
-            var dataResultNpcs = new SerializableList<List<Npcs>>();
-            dataResultNpcs.Items = DatabaseLayer.GetNpcsByZone(zoneId);
-            dataResultQuests.Items = DatabaseLayer.GetCharacterQuests(client);
-            dataResultZoneQuests.Items = DatabaseLayer.GetZoneQuests(client);
-            var zoneEntrances = DatabaseLayer.GetZoneEntrances(zoneId);
-            var clientData = ClientController.Clients.FirstOrDefault(x => x.Id == connectionId);
-            var om = ClientController.WriteMessage<SerializableList<List<AssociatedCharacterQuests>>>(connectionId, cData, dataResultQuests, null);
-            om = ClientController.WriteMessage<SerializableList<List<AssociatedZoneQuests>>>(connectionId, null, dataResultZoneQuests, om);
-            om = ClientController.WriteMessage<SerializableList<List<Npcs>>>(connectionId, null, dataResultNpcs, om);
-            om = ClientController.WriteMessage<List<ZoneEntrances>>(connectionId, null, zoneEntrances, om);
-
             ClientController.SendObjectDataTo(om, clientData, NetDeliveryMethod.ReliableOrdered, 0);
 
         }

@@ -4,10 +4,8 @@ namespace Platform.ViewComponents
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
-    using Platform.DatabaseHandlers.Contexts;
-    using Platform.DataHandlers;
-    using Platform.DataHandlers.Interfaces;
     using Rokono_Control.Models;
+    using TransportLayer.Models;
 
     public class UserRightToggleViewComponent : ViewComponent
     {

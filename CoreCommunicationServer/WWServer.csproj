@@ -9,14 +9,14 @@
  
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+   <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
       <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Include="SolarCalculator" Version="2.0.4" />
     <PackageReference Include="srp" Version="1.0.4" />
   </ItemGroup>
 
@@ -25,7 +25,7 @@
       <HintPath>Lidgren.Network.MultiTarget.dll</HintPath>
     </Reference>
     <Reference Include="StoriesUntoldDataLayer">
-      <HintPath>..\StoriesUntoldDataLayer\bin\Debug\netcoreapp3.0\StoriesUntoldDataLayer.dll</HintPath>
+      <HintPath>..\StoriesUntoldDataLayer\bin\Debug\netcoreapp3.1\StoriesUntoldDataLayer.dll</HintPath>
     </Reference>
     <Reference Include="TrasnsportLayerDTOs">
       <HintPath>..\TrasnsportLayerDTOs\bin\Debug\netcoreapp2.1\TrasnsportLayerDTOs.dll</HintPath>

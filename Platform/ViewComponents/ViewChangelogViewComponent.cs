@@ -2,9 +2,8 @@ namespace Platform.ViewComponents
 {
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
-    using Platform.DatabaseHandlers.Contexts;
     using Rokono_Control.Models;
-
+    using TransportLayer.Models;
     public class ViewChangelogViewComponent : ViewComponent
     {
         private readonly RokonoControlContext Context;

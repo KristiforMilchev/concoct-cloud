@@ -2,8 +2,8 @@ namespace Platform.ViewComponents.Documentation
 {
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
-    using Platform.DatabaseHandlers.Contexts;
     using Rokono_Control.Models;
+    using TransportLayer.Models;
 
     [ViewComponent(Name = "DocumentationBreadcrum")]
     public class DocumentationBreadcrumViewComponent : ViewComponent
