@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace Platform.Models 
+namespace Rokono_Control.Models 
 {
     public class ObjectRule 
     { 

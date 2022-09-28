@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using Rokono_Control.Models;
 
-namespace Platform.Models
+namespace Rokono_Control.Models
 {
     public class OutboundBackupModel
     {

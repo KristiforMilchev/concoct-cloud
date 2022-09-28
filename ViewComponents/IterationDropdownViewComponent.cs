@@ -7,10 +7,10 @@ namespace Platform.ViewComponents
 
     public class IterationDropdownViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public IterationDropdownViewComponent(RokonocontrolContext context, IConfiguration config)
+        public IterationDropdownViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

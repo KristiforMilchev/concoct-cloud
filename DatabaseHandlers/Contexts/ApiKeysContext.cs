@@ -5,16 +5,15 @@ namespace Platform.DatabaseHandlers.Contexts
     using System.Linq;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
-    using Platform.Models;
     using Rokono_Control.Models;
     public class ApiKeysContext : IDisposable
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         private bool disposedValue;
         private bool disposedValue1;
 
-        public ApiKeysContext(RokonocontrolContext context, IConfiguration config)
+        public ApiKeysContext(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

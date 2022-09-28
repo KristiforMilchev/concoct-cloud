@@ -9,11 +9,11 @@ namespace Rokono_Control.DatabaseHandlers.Contexts
 {
     public class BlogContext : IDisposable
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         private bool disposedValue;
  
-        public BlogContext(RokonocontrolContext context, IConfiguration configuration)
+        public BlogContext(DatabaseContext context, IConfiguration configuration)
         {
             Context = context;
             Configuration = configuration;
@@ -52,7 +52,9 @@ namespace Rokono_Control.DatabaseHandlers.Contexts
 
         internal List<BlogPostCategories> GetBlogCategories(int projectId)
         {
-            return Context.BlogPostCategories.Where(x => x.ProjectId == projectId).ToList();
+            //TODO Incompatability with the restored production backup, fix the model.
+            return new List<BlogPostCategories>();
+            //Context.BlogPostCategories.Where(x => x.ProjectId == projectId).ToList();
         }
     }
 }

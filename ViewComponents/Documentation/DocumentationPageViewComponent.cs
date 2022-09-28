@@ -11,12 +11,12 @@ namespace Platform.ViewComponents.Documentation
     [ViewComponent(Name = "DocumentationPage")]
     public class DocumentationPageViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
         AutherizationManager AutherizationManager;
         int UserId;
 
-        public DocumentationPageViewComponent(RokonocontrolContext context, IConfiguration configuration, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
+        public DocumentationPageViewComponent(DatabaseContext context, IConfiguration configuration, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
         {
             Context = context;
             Configuration = configuration;

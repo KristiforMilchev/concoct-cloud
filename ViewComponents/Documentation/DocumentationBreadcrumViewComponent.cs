@@ -8,10 +8,10 @@ namespace Platform.ViewComponents.Documentation
     [ViewComponent(Name = "DocumentationBreadcrum")]
     public class DocumentationBreadcrumViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public DocumentationBreadcrumViewComponent(RokonocontrolContext context, IConfiguration configuration)
+        public DocumentationBreadcrumViewComponent(DatabaseContext context, IConfiguration configuration)
         {
             Context = context;
             Configuration = configuration;

@@ -14,13 +14,13 @@ namespace Rokono_Control.Controllers
 {
     public class OrganizationController : Controller
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         AutherizationManager AutherizationManager { get; set; }
         private int UserId { get; set; }
         HttpContext HttpContext { get; set; }
 
-        public OrganizationController(RokonocontrolContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
+        public OrganizationController(DatabaseContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
         {
             Context = context;
             Configuration = config;

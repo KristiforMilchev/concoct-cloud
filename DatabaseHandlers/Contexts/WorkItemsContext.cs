@@ -9,21 +9,20 @@ namespace Platform.DatabaseHandlers.Contexts
     using Microsoft.Extensions.Configuration;
     using Platform.DataHandlers;
     using Platform.Hubs;
-    using Platform.Models;
     using Rokono_Control;
     using Rokono_Control.Models;
     using RokonoControl.DatabaseHandlers.WorkItemHandlers;
-    using RokonoControl.Models;
 
+    
     public class WorkItemsContext : IDisposable
     {
 
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         private bool disposedValue;
         private bool disposedValue1;
 
-        public WorkItemsContext(RokonocontrolContext context, IConfiguration config)
+        public WorkItemsContext(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;
@@ -110,7 +109,8 @@ namespace Platform.DatabaseHandlers.Contexts
             if (sprint == null)
                 return (0, 0);
 
-            return (sprint.StartDate.Value, sprint.EndDate.Value);
+            //TODO Disabled because of .net 6 migration fix this incompatability with the database model
+            return (0, 0); //(sprint.StartDate.Value.ToLongTimeString(), sprint.EndDate.Value);
         }
 
         internal List<AssociatedBoardWorkItems> GetPublicBugReports(int id)

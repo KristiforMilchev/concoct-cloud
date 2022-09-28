@@ -13,12 +13,12 @@ namespace Platform.ViewComponents
 
     public class QueryBuilderViewComponent :ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
         private  AutherizationManager AutherizationManager;
         private int UserId;
  
-        public QueryBuilderViewComponent(RokonocontrolContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
+        public QueryBuilderViewComponent(DatabaseContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
         {
             Context = context;
             Configuration = config;

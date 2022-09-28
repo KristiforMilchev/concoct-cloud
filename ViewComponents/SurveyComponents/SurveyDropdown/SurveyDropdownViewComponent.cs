@@ -4,16 +4,15 @@ namespace Platform.ViewComponents.SurveyComponents.SurveyDropdown
     using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
     using Platform.DataHandlers;
-    using Platform.Models;
     using Rokono_Control.Models;
 
     [ViewComponent(Name = "SurveyDropdown")]
     public class SurveyDropdownViewComponent: ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public SurveyDropdownViewComponent(RokonocontrolContext context, IConfiguration configuration)
+        public SurveyDropdownViewComponent(DatabaseContext context, IConfiguration configuration)
         {
             Context = context;
             Configuration = configuration;

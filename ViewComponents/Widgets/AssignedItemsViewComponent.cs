@@ -9,10 +9,10 @@ namespace Platform.ViewComponents.Widgets
     public class AssignedItemsViewComponent : ViewComponent
     {
  
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public AssignedItemsViewComponent(RokonocontrolContext context, IConfiguration config)
+        public AssignedItemsViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

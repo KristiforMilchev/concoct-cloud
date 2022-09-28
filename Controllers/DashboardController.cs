@@ -14,19 +14,18 @@ namespace Rokono_Control.Controllers
     using Platform.DatabaseHandlers.Contexts;
     using Platform.DataHandlers;
     using Platform.DataHandlers.Interfaces;
-    using Platform.Models;
     using Rokono_Control.DatabaseHandlers;
     using Rokono_Control.Models;
-    using RokonoControl.Models;
 
+    
     public class DashboardController : Controller
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         private readonly AutherizationManager AutherizationManager;
         private int UserId;
 
-        public DashboardController(RokonocontrolContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
+        public DashboardController(DatabaseContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
         {
             Context = context;
             Configuration = config;

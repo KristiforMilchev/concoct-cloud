@@ -3,16 +3,15 @@ namespace Platform.ViewComponents.Widgets
     using System.Linq;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
-    using Platform.Models;
     using Rokono_Control.Models;
 
     [ViewComponent(Name = "TableBuilder")]
     public class TableBuilderViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public TableBuilderViewComponent(RokonocontrolContext context, IConfiguration config)
+        public TableBuilderViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

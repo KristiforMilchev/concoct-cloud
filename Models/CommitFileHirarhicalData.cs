@@ -1,6 +1,7 @@
-namespace RokonoControl.Models
+using System.Collections.Generic;
+
+namespace Rokono_Control.Models
 {
-    using System.Collections.Generic;
     public class CommitFileHirarhicalData
     {
         public string Id { get; set; }

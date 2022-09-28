@@ -11,10 +11,10 @@ namespace Platform.ViewComponents.SurveyComponents.SurveyInput
     public class SurveyInputViewComponent : ViewComponent
     {
         
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public SurveyInputViewComponent(RokonocontrolContext context, IConfiguration configuration)
+        public SurveyInputViewComponent(DatabaseContext context, IConfiguration configuration)
         {
             Context = context;
             Configuration = configuration;

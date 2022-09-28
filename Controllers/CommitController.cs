@@ -10,17 +10,17 @@ namespace RokonoControl.Controllers
     using Platform.DataHandlers.Interfaces;
     using Rokono_Control.DatabaseHandlers;
     using Rokono_Control.Models;
-    using RokonoControl.Models;
 
+    
     public class CommitController : Controller
     {
 
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         AutherizationManager AutherizationManager;
         private int UserId;
  
-        public CommitController(RokonocontrolContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
+        public CommitController(DatabaseContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
         {
             Context = context;
             Configuration = config;

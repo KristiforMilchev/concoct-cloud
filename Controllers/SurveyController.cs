@@ -9,16 +9,15 @@ namespace Platform.Controllers
     using Microsoft.Extensions.Configuration;
     using Platform.DataHandlers;
     using Platform.DataHandlers.Interfaces;
-    using Platform.Models;
     using Rokono_Control.Models;
 
     public class SurveyController : Controller
     {
-        RokonocontrolContext Context {get; set;}
+        DatabaseContext Context {get; set;}
         IConfiguration Config { get; set;}
         AutherizationManager AutherizationManager {get; set;}
         private int UserId {get; set;}
-        public SurveyController(RokonocontrolContext context,IConfiguration currentConfig, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
+        public SurveyController(DatabaseContext context,IConfiguration currentConfig, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
         {
             Context = context;
             Config = currentConfig;

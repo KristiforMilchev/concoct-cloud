@@ -5,15 +5,14 @@ namespace Platform.DatabaseHandlers.Contexts
     using System.Linq;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
-    using Platform.Models;
     using Rokono_Control.Models;
     public class ChatContext : IDisposable
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         private bool disposedValue;
 
-        public ChatContext(RokonocontrolContext context, IConfiguration config)
+        public ChatContext(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

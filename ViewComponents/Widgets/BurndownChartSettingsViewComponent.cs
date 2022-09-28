@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Platform.DatabaseHandlers.Contexts;
-using Platform.Models;
 using Rokono_Control.Models;
 
 namespace Platform.ViewComponents.Widgets
@@ -11,10 +10,10 @@ namespace Platform.ViewComponents.Widgets
     [ViewComponent(Name = "BurdownChartSettings")]
     public class BurndownChartSettingsViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public BurndownChartSettingsViewComponent(RokonocontrolContext context, IConfiguration config)
+        public BurndownChartSettingsViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

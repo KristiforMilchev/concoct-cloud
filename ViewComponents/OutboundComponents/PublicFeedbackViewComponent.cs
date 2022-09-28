@@ -8,10 +8,10 @@ namespace Platform.ViewComponents
 
     public class PublicFeedbackViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public PublicFeedbackViewComponent(RokonocontrolContext context, IConfiguration config)
+        public PublicFeedbackViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

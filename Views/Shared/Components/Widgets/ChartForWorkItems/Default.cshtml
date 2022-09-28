@@ -1,6 +1,6 @@
 @{
     var  ProjectId = ViewData["ProjectId"] as int?;
-    var BindingData = ViewData["ChartBindingData"] as Platform.Models.IncomingBurndownChartSetting;
+    var BindingData = ViewData["ChartBindingData"] as IncomingBurndownChartSetting;
     var chars = "abcdefghijklmnopqrstuvwxyz0123456789";
     var random = new System.Random();
     var assignedLetter =chars[random.Next(chars.Length-1)];

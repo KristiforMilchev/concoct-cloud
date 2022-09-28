@@ -3,17 +3,16 @@ namespace Platform.ViewComponents.Widgets
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
-    using Platform.Models;
     using Rokono_Control.DatabaseHandlers;
     using Rokono_Control.Models;
 
     [ViewComponent(Name = "WidgetBuilder")]
     public class WidgetBuilderViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public WidgetBuilderViewComponent(RokonocontrolContext context, IConfiguration config)
+        public WidgetBuilderViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

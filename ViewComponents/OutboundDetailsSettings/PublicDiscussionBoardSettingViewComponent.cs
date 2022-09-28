@@ -9,10 +9,10 @@ namespace Platform.ViewComponents
 
     public class PublicDiscussionBoardSettingViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public PublicDiscussionBoardSettingViewComponent(RokonocontrolContext context, IConfiguration config)
+        public PublicDiscussionBoardSettingViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

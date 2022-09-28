@@ -19,9 +19,9 @@
                 <div tabindex="0" class="e-card" id="basic_card">
                     <div class="e-card-header">
 
- 
+     
                     </div>
-                    
+                        
                     <div class="e-card-content">
                         <div id="element"></div>
 
@@ -31,19 +31,20 @@
 
                         </div>
                         <div id="tab2_content" style="display: none; min-height:80vh;">
-                           
+                               
                             @await Component.InvokeAsync("PublicDiscussionBoardSetting", @ProjectId)
 
                         </div>
                         <div id="tab3_content" style="display: none; min-height:80vh;">
-                             @await Component.InvokeAsync("PublicFeedbackSettings", @ProjectId)
+                            @await Component.InvokeAsync("PublicFeedbackSettings", @ProjectId)
 
                         </div>
-                        
+                            
                     </div>
 
                 </div>
             </div>
+        </div>
 
 
 <script>

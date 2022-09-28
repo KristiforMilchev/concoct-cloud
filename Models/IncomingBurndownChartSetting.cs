@@ -1,6 +1,6 @@
 using System;
 
-namespace Platform.Models
+namespace Rokono_Control.Models
 {
     public class IncomingBurndownChartSetting
     {

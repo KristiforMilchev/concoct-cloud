@@ -8,10 +8,10 @@ namespace Platform.ViewComponents
 
     public class PublicDisscussionBoardViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public PublicDisscussionBoardViewComponent(RokonocontrolContext context, IConfiguration config)
+        public PublicDisscussionBoardViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

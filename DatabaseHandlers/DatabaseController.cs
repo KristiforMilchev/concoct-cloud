@@ -8,14 +8,13 @@ namespace Rokono_Control.DatabaseHandlers
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
-    using Platform.Models;
     using Rokono_Control.DataHandlers;
     using Rokono_Control.Models;
-    using RokonoControl.Models;
 
+    
     public class DatabaseController : IDisposable
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         public DatabaseController(int i, int internalId) 
         {
@@ -25,7 +24,7 @@ namespace Rokono_Control.DatabaseHandlers
         }
         private int I { get; set; }
         private int InternalId { get; set; }
-        public DatabaseController(RokonocontrolContext context, IConfiguration config)
+        public DatabaseController(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;
@@ -931,8 +930,8 @@ namespace Rokono_Control.DatabaseHandlers
                         var currentIteration = Context.WorkItemIterations.Add(iteration);
                         if(iteration.IsActive == 1)
                         {
-                            int unixTimestampStart = (int)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
-                            var endTime = (int)(DateTime.UtcNow.AddMonths(1).Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
+                            var unixTimestampStart = DateTime.UtcNow;
+                            var endTime = DateTime.UtcNow.AddMonths(1);
                             iteration.StartDate = unixTimestampStart;
                             iteration.EndDate = endTime;
                         }

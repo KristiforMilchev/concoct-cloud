@@ -11,20 +11,18 @@ namespace Platform.Hubs
     using Platform.DatabaseHandlers.Contexts;
     using Platform.DataHandlers;
     using Platform.DataHandlers.Interfaces;
-    using Platform.Models;
     using Rokono_Control;
     using Rokono_Control.DatabaseHandlers;
     using Rokono_Control.Models;
-    using RokonoControl.Models;
 
     public class MessageHub : Hub
     {
-        RokonocontrolContext DatabaseContext;
+        DatabaseContext DatabaseContext;
         IConfiguration Configuration;
         private  AutherizationManager AutherizationManager;
         private int UserId;
  
-        public MessageHub(RokonocontrolContext dbContext, IConfiguration config,IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
+        public MessageHub(DatabaseContext dbContext, IConfiguration config,IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
         {
             DatabaseContext = dbContext;
             Configuration = config;
@@ -106,7 +104,7 @@ namespace Platform.Hubs
                 var userProject = context.GetUserProjects(UserId);
             }
 
-            Program.Members.Add(new Models.HubMappedMembers{
+            Program.Members.Add(new HubMappedMembers{
                 Id = Context.ConnectionId,
                 Name = name
             });

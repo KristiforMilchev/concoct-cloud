@@ -12,7 +12,7 @@
 
     public class BlogController : Controller
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         IHubContext<MessageHub> MessageContext;
 
@@ -20,7 +20,7 @@
         private int UserId { get; set; }
 
 
-        public BlogController(RokonocontrolContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor, IHubContext<MessageHub> hubContext)
+        public BlogController(DatabaseContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor, IHubContext<MessageHub> hubContext)
         {
             Context = context;
             Configuration = config;

@@ -8,10 +8,10 @@ namespace Platform.ViewComponents
 
     public class ChatRoomSettingViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public ChatRoomSettingViewComponent(RokonocontrolContext context, IConfiguration config)
+        public ChatRoomSettingViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

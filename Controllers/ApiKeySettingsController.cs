@@ -4,14 +4,13 @@ namespace Platform.Controllers
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Platform.DatabaseHandlers.Contexts;
-    using Platform.Models;
     using Rokono_Control.Models;
     public class ApiKeySettingsController : Controller
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
 
-        public ApiKeySettingsController(RokonocontrolContext context, IConfiguration config)
+        public ApiKeySettingsController(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

@@ -10,7 +10,7 @@ namespace RokonoControl.DatabaseHandlers.WorkItemHandlers
     public class WorkItemHadler
     {
         
-        internal static bool UpdateWorkItem(IncomingWorkItem currentItem,  RokonocontrolContext Context)
+        internal static bool UpdateWorkItem(IncomingWorkItem currentItem,  DatabaseContext Context)
         {
             var dbVersion = Context.WorkItem.FirstOrDefault(x=>x.Id == currentItem.WorkItemId);
             Context.Attach(dbVersion);
@@ -222,7 +222,7 @@ namespace RokonoControl.DatabaseHandlers.WorkItemHandlers
         }
 
 
-        public static WorkItem AddNewWorkItem (IncomingWorkItem currentItem, RokonocontrolContext Context,IConfiguration configuration, int userId)
+        public static WorkItem AddNewWorkItem (IncomingWorkItem currentItem, DatabaseContext Context,IConfiguration configuration, int userId)
         {
             var currentUser = "Unassigned";
 

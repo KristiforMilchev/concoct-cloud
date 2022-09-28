@@ -9,10 +9,10 @@ namespace Platform.ViewComponents
     public class BugReportFormViewComponent : ViewComponent
     {
         
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public BugReportFormViewComponent(RokonocontrolContext context, IConfiguration config)
+        public BugReportFormViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

@@ -6,16 +6,15 @@ namespace Platform.Controllers
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Platform.DatabaseHandlers.Contexts;
-    using Platform.Models;
     using Rokono_Control.DatabaseHandlers;
     using Rokono_Control.Models;
 
     public class OutboundDetailsController : Controller
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
 
-        public OutboundDetailsController(RokonocontrolContext context, IConfiguration config)
+        public OutboundDetailsController(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

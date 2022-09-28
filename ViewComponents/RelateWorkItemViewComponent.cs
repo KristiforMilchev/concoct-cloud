@@ -7,10 +7,10 @@ namespace Platform.ViewComponents
 
     public class RelateWorkItemViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public RelateWorkItemViewComponent(RokonocontrolContext context, IConfiguration config)
+        public RelateWorkItemViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

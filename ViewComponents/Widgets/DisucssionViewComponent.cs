@@ -11,12 +11,12 @@
     [ViewComponent(Name = "GetDiscussionBoard")]
     public class DisucssionViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
         private AutherizationManager AutherizationManager;
         private int UserId;
 
-        public DisucssionViewComponent(RokonocontrolContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
+        public DisucssionViewComponent(DatabaseContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
         {
             Context = context;
             Configuration = config;

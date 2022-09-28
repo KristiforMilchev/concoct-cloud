@@ -17,14 +17,14 @@ namespace Rokono_Control.DatabaseHandlers.Contexts
 {
     public class RepositoriesContext :IDisposable
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         RepositoryManager RepositoryManager;
         IConfiguration Configuration;
         string OS;
         
         private bool disposedValue2;
 
-        public RepositoriesContext(RokonocontrolContext context, IConfiguration config, RepositoryManager repositoryManager)
+        public RepositoriesContext(DatabaseContext context, IConfiguration config, RepositoryManager repositoryManager)
         {
             Context = context;
             Configuration = config;

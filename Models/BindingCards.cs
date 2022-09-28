@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace RokonoControl.Models
+namespace Rokono_Control.Models
 {
     public class BindingCards
     {

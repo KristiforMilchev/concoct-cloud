@@ -7,17 +7,16 @@ namespace Platform.Controllers
     using Platform.DatabaseHandlers.Contexts;
     using Platform.DataHandlers;
     using Platform.DataHandlers.Interfaces;
-    using Platform.Models;
     using Rokono_Control.DatabaseHandlers;
     using Rokono_Control.Models;
     public class NotificationController :Controller
     {
 
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         private  AutherizationManager AutherizationManager;
         private int UserId;
-        public NotificationController(RokonocontrolContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
+        public NotificationController(DatabaseContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor)
         {
             Context = context;
             Configuration = config;

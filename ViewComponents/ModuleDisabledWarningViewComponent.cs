@@ -7,10 +7,10 @@ namespace Platform.ViewComponents
     
     public class ModuleDisabledWarningViewComponent : ViewComponent 
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public ModuleDisabledWarningViewComponent(RokonocontrolContext context, IConfiguration config)
+        public ModuleDisabledWarningViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

@@ -4,16 +4,15 @@ namespace Platform.DatabaseHandlers.Contexts
     using System.Linq;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
-    using Platform.Models;
     using Rokono_Control.Models;
     public class OutboundDetailsContext : IDisposable
     {
         
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         private bool disposedValue;
 
-        public OutboundDetailsContext(RokonocontrolContext context, IConfiguration config)
+        public OutboundDetailsContext(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

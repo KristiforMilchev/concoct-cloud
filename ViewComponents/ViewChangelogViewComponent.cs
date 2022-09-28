@@ -7,10 +7,10 @@ namespace Platform.ViewComponents
 
     public class ViewChangelogViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public ViewChangelogViewComponent(RokonocontrolContext context, IConfiguration config)
+        public ViewChangelogViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

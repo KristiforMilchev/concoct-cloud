@@ -9,12 +9,12 @@ namespace Platform.DataHandlers
 {
     public class SurveyContext : IDisposable
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         private bool disposedValue;
         private bool disposedValue1;
 
-        public SurveyContext(RokonocontrolContext context, IConfiguration config)
+        public SurveyContext(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

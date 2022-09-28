@@ -8,17 +8,16 @@ namespace Rokono_Control.Controllers
     using Platform.DatabaseHandlers.Contexts;
     using Platform.DataHandlers;
     using Platform.DataHandlers.Interfaces;
-    using Platform.Models;
     using Rokono_Control.Models;
 
     public class BacklogsController : Controller
     {
-       RokonocontrolContext Context;
+       DatabaseContext Context;
         IConfiguration Configuration;
 
         AutherizationManager AutherizationManager {get; set;}
         private int UserId {get; set;}
-        public BacklogsController(RokonocontrolContext context, IConfiguration config,   IAutherizationManager autherizationManager,IHttpContextAccessor httpContextAccessor)
+        public BacklogsController(DatabaseContext context, IConfiguration config,   IAutherizationManager autherizationManager,IHttpContextAccessor httpContextAccessor)
         {
             Context = context;
             Configuration = config;

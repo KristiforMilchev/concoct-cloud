@@ -4,16 +4,15 @@ namespace Platform.ViewComponents.SurveyComponents.SurveyQuestionList
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Platform.DataHandlers;
-    using Platform.Models;
     using Rokono_Control.Models;
 
     [ViewComponent(Name = "SurveyQuestionListSettings")]
     public class SurveyQuestionListSettingsViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public SurveyQuestionListSettingsViewComponent(RokonocontrolContext context, IConfiguration configuration)
+        public SurveyQuestionListSettingsViewComponent(DatabaseContext context, IConfiguration configuration)
         {
             Context = context;
             Configuration = configuration;

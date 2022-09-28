@@ -8,17 +8,16 @@ namespace Platform.Controllers {
     using Platform.DatabaseHandlers.Contexts;
     using Platform.DataHandlers;
     using Platform.DataHandlers.Interfaces;
-    using Platform.Models;
     using Rokono_Control.DatabaseHandlers;
     using Rokono_Control.Models;
 
     public class WidgetController : Controller {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         AutherizationManager AutherizationManager { get; set; } 
         private int UserId { get; set; }
 
-        public WidgetController (RokonocontrolContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor) {
+        public WidgetController (DatabaseContext context, IConfiguration config, IAutherizationManager autherizationManager, IHttpContextAccessor httpContextAccessor) {
             Context = context;
             Configuration = config;
             AutherizationManager = (AutherizationManager) autherizationManager;

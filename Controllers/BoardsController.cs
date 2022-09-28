@@ -11,15 +11,14 @@ namespace RokonoControl.Controllers
     using Platform.DataHandlers;
     using Platform.DataHandlers.Interfaces;
     using Platform.Hubs;
-    using Platform.Models;
     using Rokono_Control;
     using Rokono_Control.DatabaseHandlers;
     using Rokono_Control.Models;
-    using RokonoControl.Models;
 
+    
     public class BoardsController : Controller
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         IHubContext<MessageHub> MessageContext;
 
@@ -27,7 +26,7 @@ namespace RokonoControl.Controllers
         private int UserId {get; set;}
 
 
-        public BoardsController(RokonocontrolContext context, IConfiguration config, IAutherizationManager autherizationManager,IHttpContextAccessor httpContextAccessor, IHubContext<MessageHub> hubContext)
+        public BoardsController(DatabaseContext context, IConfiguration config, IAutherizationManager autherizationManager,IHttpContextAccessor httpContextAccessor, IHubContext<MessageHub> hubContext)
         {
             Context = context;
             Configuration = config;

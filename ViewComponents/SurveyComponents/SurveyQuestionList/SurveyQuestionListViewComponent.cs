@@ -5,15 +5,14 @@
     using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
     using Platform.DataHandlers;
-    using Platform.Models;
     using Rokono_Control.Models;
 
     public class SurveyQuestionListViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public SurveyQuestionListViewComponent(RokonocontrolContext context, IConfiguration configuration)
+        public SurveyQuestionListViewComponent(DatabaseContext context, IConfiguration configuration)
         {
             Context = context;
             Configuration = configuration;

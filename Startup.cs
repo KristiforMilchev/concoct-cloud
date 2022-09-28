@@ -47,10 +47,10 @@
                     .AllowAnyMethod()
                     .AllowAnyHeader();
             }));
-            System.Console.WriteLine(StartConfiguration.ConnectionStrings.RokonocontrolContext);
+            System.Console.WriteLine(StartConfiguration.ConnectionStrings.DatabaseContext);
             services.AddEntityFrameworkSqlServer()
-         .  AddDbContext<RokonocontrolContext>((serviceProvider, options) =>
-            options.UseSqlServer(StartConfiguration.ConnectionStrings.RokonocontrolContext)
+         .  AddDbContext<DatabaseContext>((serviceProvider, options) =>
+            options.UseSqlServer(StartConfiguration.ConnectionStrings.DatabaseContext)
                 .UseInternalServiceProvider(serviceProvider));
 
 
@@ -67,7 +67,7 @@
             );
             var projects = new List<Projects>();
  
-            using (var context = new RokonocontrolContext())
+            using (var context = new DatabaseContext())
             {
                 projects = context.Projects.Include(x => x.Repository).ToList();
             }

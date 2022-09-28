@@ -1,15 +1,14 @@
 using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using Platform.Models;
 using Rokono_Control.Models;
 
 namespace Platform.DataHandlers
 {
     public class ChangelogGenerator :IDisposable
     {
-        RokonocontrolContext Context;
-        public ChangelogGenerator(RokonocontrolContext context)
+        DatabaseContext Context;
+        public ChangelogGenerator(DatabaseContext context)
         {
             Context = context;
         }

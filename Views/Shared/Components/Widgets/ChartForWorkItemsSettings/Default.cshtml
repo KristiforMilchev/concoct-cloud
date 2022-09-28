@@ -1,10 +1,10 @@
 @{
     var Queries = ViewData["UserQueries"] as List<UserQueries>;
-    var CountWItems = ViewData["CountWItems"] as List<Platform.Models.OutgoingBindingCollection>;
-    var BurndownOn = ViewData["BurndownOn"] as List<Platform.Models.OutgoingBindingCollection>;
-    var SumWItems = ViewData["SumWItems"] as List<Platform.Models.OutgoingBindingCollection>;
-    var Backlogs = ViewData["Backlog"]  as List<Platform.Models.OutgoingBindingCollection>;
-    var GroupBy = ViewData["GroupBy"] as List<Platform.Models.OutgoingBindingCollection>;
+    var CountWItems = ViewData["CountWItems"] as List<OutgoingBindingCollection>;
+    var BurndownOn = ViewData["BurndownOn"] as List<OutgoingBindingCollection>;
+    var SumWItems = ViewData["SumWItems"] as List<OutgoingBindingCollection>;
+    var Backlogs = ViewData["Backlog"]  as List<OutgoingBindingCollection>;
+    var GroupBy = ViewData["GroupBy"] as List<OutgoingBindingCollection>;
     var ProjectId = ViewData["ProjectId"] as int?;
     var ViewComponentId = ViewData["ViewComponentId"] as int?;
     var Dashboard = ViewData["Dashboard"] as int?;

@@ -1,6 +1,4 @@
-using Rokono_Control.Models;
-
-namespace RokonoControl.Models
+namespace Rokono_Control.Models
 {
     public class IncomingProjectAccount
     {

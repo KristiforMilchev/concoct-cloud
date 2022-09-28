@@ -5,13 +5,12 @@ namespace Platform.ViewComponents
     using Platform.DatabaseHandlers.Contexts;
     using Rokono_Control.Models;
     [ViewComponent(Name = "PublicFeedbackSettings")]
-
     public class PublicFeedbackSettingsViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public PublicFeedbackSettingsViewComponent(RokonocontrolContext context, IConfiguration config)
+        public PublicFeedbackSettingsViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

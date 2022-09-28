@@ -6,16 +6,15 @@ namespace Platform.ViewComponents.Widgets
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Platform.DatabaseHandlers.Contexts;
-    using Platform.Models;
     using Rokono_Control.Models;
 
     [ViewComponent(Name = "ChartForWorkItemsSettings")]
     public class ChartForWorkItemsSettingsViewComponent : ViewComponent
     {
-                private readonly RokonocontrolContext Context;
+                private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public ChartForWorkItemsSettingsViewComponent(RokonocontrolContext context, IConfiguration config)
+        public ChartForWorkItemsSettingsViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

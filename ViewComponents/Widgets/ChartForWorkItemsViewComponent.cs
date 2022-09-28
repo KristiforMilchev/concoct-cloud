@@ -4,17 +4,16 @@ namespace Platform.ViewComponents.Widgets
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
-    using Platform.Models;
     using Rokono_Control.DatabaseHandlers;
     using Rokono_Control.Models;
     
     [ViewComponent(Name = "ChartForWorkItems")]
     public class ChartForWorkItemsViewComponent : ViewComponent
     {
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public ChartForWorkItemsViewComponent(RokonocontrolContext context, IConfiguration config)
+        public ChartForWorkItemsViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

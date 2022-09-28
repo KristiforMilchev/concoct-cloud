@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
-using Platform.Models;
 using Rokono_Control.Models;
 
 namespace Platform.ViewComponents.Widgets
@@ -10,10 +9,10 @@ namespace Platform.ViewComponents.Widgets
     public class BurdownChartViewComponent : ViewComponent
     {
         
-        private readonly RokonocontrolContext Context;
+        private readonly DatabaseContext Context;
         private readonly IConfiguration Configuration;
 
-        public BurdownChartViewComponent(RokonocontrolContext context, IConfiguration config)
+        public BurdownChartViewComponent(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

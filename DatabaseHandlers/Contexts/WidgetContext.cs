@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Platform.Models;
 using Rokono_Control.Models;
 
 namespace Platform.DatabaseHandlers.Contexts
 {
     public class WidgetContext : IDisposable
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         private bool disposedValue;
         private bool disposedValue1;
 
-        public WidgetContext(RokonocontrolContext context, IConfiguration config)
+        public WidgetContext(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

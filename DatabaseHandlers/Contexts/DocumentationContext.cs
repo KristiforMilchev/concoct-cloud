@@ -5,15 +5,14 @@ namespace Platform.DatabaseHandlers.Contexts
     using System.Linq;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
-    using Platform.Models;
     using Rokono_Control.Models;
     public class DocumentationContext : IDisposable
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         private bool disposedValue;
 
-        public DocumentationContext(RokonocontrolContext context, IConfiguration config)
+        public DocumentationContext(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;

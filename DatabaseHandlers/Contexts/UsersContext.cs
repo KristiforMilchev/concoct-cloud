@@ -8,15 +8,15 @@ namespace Platform.DatabaseHandlers.Contexts
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Rokono_Control.Models;
-    using RokonoControl.Models;
 
+    
     public class UsersContext  : IDisposable
     {
-        RokonocontrolContext Context;
+        DatabaseContext Context;
         IConfiguration Configuration;
         private bool disposedValue;
 
-        public UsersContext(RokonocontrolContext context, IConfiguration config)
+        public UsersContext(DatabaseContext context, IConfiguration config)
         {
             Context = context;
             Configuration = config;
