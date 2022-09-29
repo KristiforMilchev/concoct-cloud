@@ -7,8 +7,11 @@
 
 <a href="https://www.facebook.com/Rokono-Control-107429234338967" class="ss-btn-twitter">Follow us on Facebook</a>
 
-Public demo and acess to the project for contributors:
- https://portal.concoctcloud.com/Accounts/ProjectSignup?projectId=5012
+Public demo and access to the project for contributors:
+https://webapp-220929133419.azurewebsites.net/Collaborativesoft
+
+Username: kristifor@collaborativesoft.com 
+Password: 123
 
 Rokono Control is an open source project management system that combines lots of different features. Its based over the agile project management methodologies and the default planning workflow follows the pattern of Epic->Feature->User Story -> Task | Bug | Issue. It offers dynamic user interface allowing to manage multiple projects at the same time, assign team members, manage member rights. One of its core features is to connect team members while allowing agile workflow during the development of the product that you're working on, thus we are integrating internal messaging systems so you can connect with your team members without the use of third party applications. I am also working on personalized experiences so that developers can focus on their work while administrators focus on user rights management and managers can focus on planning boards and investors can focus on dashboards with charts that show  their project progress. The software comes with a set of tools that allow server administrators to easily backup all projects and move them to a different server instance on the fly.
 

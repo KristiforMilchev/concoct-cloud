@@ -137,7 +137,6 @@ namespace Rokono_Control
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-            .UseUrls("http://localhost:6005")
-            .UseStartup<Startup>();
+                .UseStartup<Startup>();
     }
 }
