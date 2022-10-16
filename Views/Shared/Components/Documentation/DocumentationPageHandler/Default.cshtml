@@ -197,16 +197,41 @@ var uploadObj = new ej.inputs.Uploader({
 
 });
 uploadObj.appendTo('#File_@random');
+
+function toDataUrl(url, callback) {
+   var xhr = new XMLHttpRequest();
+   xhr.onload = function() {
+       var reader = new FileReader();
+       reader.onloadend = function() {
+           callback(reader.result);
+       }
+       reader.readAsDataURL(xhr.response);
+   };
+   xhr.open('GET', url);
+   xhr.responseType = 'blob';
+   xhr.send();
+}
+
 function ItemSelected(args) {
+    debugger
+    
+  
     //console.log(args);
     selectedImage = window.location.origin+"/Files/Uploads/"+args.filesData[0].rawFile.name;
     var length = InputPageData.getLength();
-    //console.log(length);
-    activeFiles.push({
-        "FileName":args.filesData[0].rawFile.name,
-        "Line" : length+1
+    
+    toDataUrl(selectedImage, function(myBase64) {
+        debugger    
+        activeFiles.push({
+            "FileName":myBase64,
+            "Line" : length+1
+        });
+        InputPageData.insertEmbed(length+1, 'image', myBase64);
     });
-    InputPageData.insertEmbed(length+1, 'image', selectedImage);
+  
+    
+
+    
 
 }
 var Delta;

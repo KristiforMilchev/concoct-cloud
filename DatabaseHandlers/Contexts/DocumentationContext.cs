@@ -39,6 +39,8 @@ namespace Platform.DatabaseHandlers.Contexts
             var result = new List<OutgoingChatItem>();
             Context.DocumentationCategory
             .Include(x=>x.DocumentationCategoryField)
+            .Include(x=>x.Documentation)
+            .Where(x=>x.Documentation.ProjectId == id)
             .Select(x=>x)
             .ToList().ForEach(x=>{
                 var cItem = new OutgoingChatItem
