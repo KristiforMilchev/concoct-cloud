@@ -42,8 +42,9 @@ namespace Rokono_Control.DatabaseHandlers.Contexts
             var result = new List<Branches>();
             var project = Context.Projects.Include(x => x.Repository).FirstOrDefault(x => x.Id == projectId);
             var index = 0;
-            var getCommits = RepositoryManager.CommandOutput(OS, "git branch -r", Path.Combine(Program.Configuration.LocalRepo, Program.ServerOS == "win" ?
-                                            $"{project.Repository.FolderPath}\\{GetRepositoryName(project)}" : $"{project.Repository.LinuxFolderPath}/{GetRepositoryName(project)}"));
+            var getCommits = RepositoryManager.CommandOutput(OS, "git branch -r", Program.ServerOS == "win" ?
+                $"{project.Repository.FolderPath}\\{GetRepositoryName(project)}" : $"{project.Repository.LinuxFolderPath}/{GetRepositoryName(project)}");
+            
             foreach (var line in getCommits.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
             {
                 
@@ -128,10 +129,11 @@ namespace Rokono_Control.DatabaseHandlers.Contexts
             var result = new List<OutgoingCommitTemp>();
             branch = $"origin/{branch}";
             if (!Program.ProjectBranches.Any(x => x.ProjectId == projectId))
-                RepositoryManager.GetAllCommitsForProject(projectId, OS, Context.Projects.FirstOrDefault(x => x.Id == projectId));
+                RepositoryManager.GetAllCommitsForProject(projectId, OS, Context.Projects.Include(x=>x.Repository).FirstOrDefault(x => x.Id == projectId));
 
-            result = Program.ProjectBranches.FirstOrDefault(x => x.ProjectId == projectId && x.BranchName == branch).Commits;
-            
+            var exists = Program.ProjectBranches.FirstOrDefault(x => x.ProjectId == projectId && x.BranchName == branch);
+            if(exists != null)
+                result = exists.Commits; 
 
             return result;
         }

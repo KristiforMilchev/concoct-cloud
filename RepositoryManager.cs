@@ -240,9 +240,17 @@ namespace Rokono_Control
 
         public static string ExecuteCmd(string arguments, string workingDiectory = null)
         {
-            var result = string.Empty; 
-            if(workingDiectory != null && Directory.Exists(workingDiectory))
+            var result = string.Empty;
+
+            try
             {
+                if (string.IsNullOrEmpty(workingDiectory))
+                    return string.Empty;
+            
+                if (!Directory.Exists(workingDiectory))
+                    Directory.CreateDirectory(workingDiectory);
+            
+
                 var process = new Process()
                 {
                     StartInfo = new ProcessStartInfo
@@ -261,6 +269,13 @@ namespace Rokono_Control
                 process.Start();
                 result = process.StandardOutput.ReadToEnd();
                 process.WaitForExit();
+                
+              
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                
             }
             return result;
         }
