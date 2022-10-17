@@ -9,9 +9,34 @@
     var ViewRights = ViewData["GetUserViewRights"] as int?;
 }
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style>
+    
+html::-webkit-scrollbar {
+    width: 0;
+    scrollbar-color: #1c86c8 white;
+    scrollbar-width: thin !important;
+}
 
+html::-webkit-scrollbar-track {
+    background: #cccccc;
+    XXborder-radius: 5px;
+    scrollbar-color: #1c86c8 white;
+    scrollbar-width: thin !important;
+}
+
+html::-webkit-scrollbar-thumb {
+    scrollbar-color: #1c86c8;
+    XXborder-radius: 5px;
+    background: #da467f;
+    border-radius: 10px;
+    width: 4px;
+    scrollbar-color: #1c86c8 white;
+    scrollbar-width: thin !important;
+    display: none;
+}
+</style>
  
- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
 <!--[if lt IE 9]>
 <script src="../scripts/jquery-1.11.3.min.js" type="text/javascript" ></script>
