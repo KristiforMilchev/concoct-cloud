@@ -8,7 +8,8 @@
 <a href="https://www.facebook.com/Rokono-Control-107429234338967" class="ss-btn-twitter">Follow us on Facebook</a>
 
 Public demo and access to the project for contributors:
-https://webapp-220929133419.azurewebsites.net/Collaborativesoft
+
+https://concoctcloud.com/Accounts/ProjectSignup?projectId=9027
 
 Username: kristifor@collaborativesoft.com 
 Password: 123
