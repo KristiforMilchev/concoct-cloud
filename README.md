@@ -1,3 +1,6 @@
+# The Projects is currently being migrated to dart for the web APIS and Flutter for the frontend so it can run evrywhere, this repository is no longer maintained, once i have a stable build, i will put a reference here. Thanks!
+
+
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKristiforMilchev%2FRokonoControl.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FKristiforMilchev%2FRokonoControl?ref=badge_shield)
 
